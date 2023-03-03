@@ -5,7 +5,7 @@ import logo from "../Assets/banner-logo.png";
 const Banner = () => {
   return (
     <div
-      className="h-screen my-[100px] flex flex-col justify-center items-center"
+      className="h-screen mb-[100px] flex flex-col justify-center items-center"
       style={{ background: `url(${img})`, backgroundSize: "cover" }}
     >
       <img className="w-20 my-10" src={logo} alt="" />
