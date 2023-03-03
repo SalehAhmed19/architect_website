@@ -88,28 +88,30 @@ const SimpleInfo = () => {
     },
   ];
   return (
-    <div className="flex pt-[110px] mx-20">
-      <div ref={sliderRef} className="keen-slider">
-        {data.map((d) => (
-          <div className="keen-slider__slide p-7 flex items-center w-full">
-            <h3 className="text-4xl text-[#D0011C] mx-4">{d.icon}</h3>
-            <div>
-              <h4 className="font-bold">{d.title}</h4>
-              <h4 className="text-[#878787]">{d.des}</h4>
+    <div className="hidden lg:block">
+      <div className="flex pt-[110px] mx-20">
+        <div ref={sliderRef} className="keen-slider">
+          {data.map((d) => (
+            <div className="keen-slider__slide p-7 flex items-center w-full">
+              <h3 className="text-4xl text-[#D0011C] mx-4">{d.icon}</h3>
+              <div>
+                <h4 className="font-bold">{d.title}</h4>
+                <h4 className="text-[#878787]">{d.des}</h4>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-      <div className="flex justify-center items-center">
-        <Search>
-          <SearchIconWrapper>
-            <CiSearch />
-          </SearchIconWrapper>
-          <StyledInputBase
-            placeholder="Search…"
-            inputProps={{ "aria-label": "search" }}
-          />
-        </Search>
+          ))}
+        </div>
+        <div className="flex justify-center items-center">
+          <Search>
+            <SearchIconWrapper>
+              <CiSearch className="text-2xl" />
+            </SearchIconWrapper>
+            <StyledInputBase
+              placeholder="Search…"
+              inputProps={{ "aria-label": "search" }}
+            />
+          </Search>
+        </div>
       </div>
     </div>
   );

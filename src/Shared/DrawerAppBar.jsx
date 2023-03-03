@@ -91,7 +91,7 @@ function DrawerAppBar(props) {
                 {item}
               </Button>
             ))}
-            <button className="bg-[#D0011C] px-4 py-3 text-[#fff] font-bold hover:bg-[#fff] hover:border-2 border-[#D0011C] hover:text-[#D0011C] ml-10">
+            <button className="bg-[#D0011C] hover-effect px-4 py-3 text-[#fff] font-bold hover:bg-[#fff] hover:border-2 border-[#D0011C] hover:text-[#D0011C] ml-10">
               REQUEST A QUOTE
             </button>
           </Box>

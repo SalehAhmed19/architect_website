@@ -12,7 +12,7 @@ const Banner = () => {
       <h1 className="text-[#fff] text-xl lg:text-5xl font-bold">
         Helping Industrial Organizations <br />& Businesses Lead the Waves
       </h1>
-      <button className="bg-[#fff] px-8 py-4 my-5 text-sm font-bold hover:bg-[#D0041B] hover:text-[#fff]">
+      <button className="bg-[#fff] px-8 py-4 my-5 text-sm font-bold hover-effect hover:bg-[#D0041B] hover:text-[#fff]">
         OUR SERVICES
       </button>
     </div>

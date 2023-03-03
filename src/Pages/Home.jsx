@@ -1,5 +1,6 @@
 import React from "react";
 import Banner from "../Components/Banner";
+import OurMission from "../Components/OurMission";
 import SimpleInfo from "../Components/SimpleInfo";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <div>
       <SimpleInfo />
       <Banner />
+      <OurMission />
     </div>
   );
 };
