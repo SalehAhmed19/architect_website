@@ -18,11 +18,11 @@ import logo from "../Assets/logo.png";
 
 const drawerWidth = 240;
 const navItems = [
-  "Home",
-  "Our Mission",
-  "About Us",
-  "Innovations",
-  "Testimonials",
+  { _id: 1, menu: "Home", url: "#home" },
+  { _id: 2, menu: "Our Mission", url: "#mission" },
+  { _id: 3, menu: "About Us", url: "#about" },
+  { _id: 4, menu: "Innovations", url: "#innovations" },
+  { _id: 5, menu: "Testimonials", url: "#testimonials" },
 ];
 
 function DrawerAppBar(props) {
@@ -41,9 +41,9 @@ function DrawerAppBar(props) {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+          <ListItem key={item._id} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
+              <ListItemText primary={item.menu} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -77,19 +77,14 @@ function DrawerAppBar(props) {
           >
             <MenuIcon />
           </IconButton>
-          {/* <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-          >
-            MUI
-          </Typography> */}
           <img className="w-48" src={logo} alt="" />
           <Box sx={{ display: { xs: "none", sm: "block" }, margin: "0 80px" }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#000", margin: "0 10px" }}>
-                {item}
-              </Button>
+              <a key={item._id} href={item.url}>
+                <Button key={item} sx={{ color: "#000", margin: "0 10px" }}>
+                  {item.menu}
+                </Button>
+              </a>
             ))}
             <button className="bg-[#D0011C] hover-effect px-4 py-3 text-[#fff] font-bold hover:bg-[#fff] hover:border-2 border-[#D0011C] hover:text-[#D0011C] ml-10">
               REQUEST A QUOTE

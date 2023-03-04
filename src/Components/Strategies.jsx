@@ -4,7 +4,7 @@ import { BsCheckLg } from "react-icons/bs";
 
 const Strategies = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2">
+    <div id="about" className="grid grid-cols-1 lg:grid-cols-2">
       <div>
         <img className="h-[500px]" src={hero} alt="" />
       </div>

@@ -19,7 +19,10 @@ const OurMission = () => {
     },
   ];
   return (
-    <div className="flex flex-col lg:flex-row justify-between lg:mx-28 mx-5 py-20">
+    <div
+      className="flex flex-col lg:flex-row justify-between lg:mx-28 mx-5 py-20"
+      id="mission"
+    >
       <div>
         <h2 className="text-4xl font-bold">
           Extremely <br /> intellectual & <br />

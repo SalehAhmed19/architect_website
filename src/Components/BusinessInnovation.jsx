@@ -52,7 +52,7 @@ const BusinessInnovation = () => {
     },
   ];
   return (
-    <div className="py-20">
+    <div className="py-20" id="innovations">
       <h2 className="text-4xl font-bold text-center">
         360° Business <span className="text-[#D0011C]">Innovation.</span>
       </h2>
