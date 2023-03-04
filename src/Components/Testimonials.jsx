@@ -69,7 +69,7 @@ const Testimonials = () => {
     slides: { perView: 1 },
   });
   return (
-    <div className="bg-[#F7F7F7] p-20 my-24" id="testimonials">
+    <div className="bg-[#F7F7F7] p-20 py-24" id="testimonials">
       <h1 className="text-4xl font-bold flex items-center my-10">
         <TbMessages className="mr-3 text-[#C9C9C9] text-5xl" />
         Happy Customers Said
