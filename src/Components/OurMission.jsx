@@ -25,7 +25,7 @@ const OurMission = () => {
           Extremely <br /> intellectual & <br />
           challenging <br /> <span className="text-[#D0011C]">projects.</span>
         </h2>
-        <button className="bg-[#D0041B] hover-effect px-8 py-4 my-10 text-sm font-bold text-[#fff] hover:bg-[#000] hover:text-[#fff]">
+        <button className="bg-[#D0011C] hover-effect px-8 py-4 my-10 text-sm font-bold text-[#fff] hover:bg-[#000] hover:text-[#fff]">
           OUR MISSION
         </button>
       </div>

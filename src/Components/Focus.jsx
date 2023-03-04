@@ -5,7 +5,7 @@ import { BsPlayFill } from "react-icons/bs";
 const Focus = () => {
   return (
     <div
-      className="py-56"
+      className="py-48"
       style={{ background: `url(${img})`, backgroundSize: "cover" }}
     >
       <h2 className="text-[#fff] text-4xl text-center font-bold">
