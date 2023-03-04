@@ -5,7 +5,7 @@ import { MdMap, MdMail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="bg-[#222222] text-[#666666] lg:p-20 p-5">
+    <div className="bg-[#222222] text-[#666666] lg:p-24 p-5">
       <div className="flex flex-col lg:flex-row">
         <div className="w-2/4">
           <img src={logo} alt="" />
