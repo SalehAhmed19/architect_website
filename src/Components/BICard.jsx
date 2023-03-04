@@ -2,7 +2,7 @@ import React from "react";
 
 const BICard = ({ d2 }) => {
   return (
-    <div className="flex items-center ml-10 mr-40 my-10">
+    <div className="flex items-center lg:ml-10 lg:mr-40 my-10 mx-5">
       <img className="w-20 mr-5" src={d2.img} alt="" />
       <div>
         <h4 className="font-bold text-xl">{d2.title}</h4>

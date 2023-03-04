@@ -56,12 +56,12 @@ const BusinessInnovation = () => {
       <h2 className="text-4xl font-bold text-center">
         360° Business <span className="text-[#D0011C]">Innovation.</span>
       </h2>
-      <p className="text-[#878787] mx-40 text-center my-5 text-xl">
+      <p className="text-[#878787] lg:mx-40 mx-5 text-center my-5 text-xl">
         It is imperative that everyone follows the policies and guidelines to
         ensure their own <br /> safety and the safety of others around them.
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 ml-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:ml-20 mx-5">
           {data.map((d) => (
             <div className="py-10">
               <BusinessInnovationCard key={d._id} d={d} />
