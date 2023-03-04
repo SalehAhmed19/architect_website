@@ -6,7 +6,7 @@ const BusinessInnovationCard = ({ d }) => {
     <div className="shadow-lg pb-7">
       <img src={d.img} alt="" />
       <div className="px-5">
-        <p className="font-bold flex justify-between text-sm my-5">
+        <p className="font-bold flex justify-between text-xs my-5">
           <span className="text-[#B6B6B6]">{d.date}</span>
           <span className="text-[#D0011C]">{d.topic}</span>
         </p>
