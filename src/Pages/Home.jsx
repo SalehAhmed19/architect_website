@@ -1,5 +1,6 @@
 import React from "react";
 import Banner from "../Components/Banner";
+import Focus from "../Components/Focus";
 import Innovation from "../Components/Innovation";
 import OurMission from "../Components/OurMission";
 import SimpleInfo from "../Components/SimpleInfo";
@@ -13,6 +14,7 @@ const Home = () => {
       <OurMission />
       <Innovation />
       <Strategies />
+      <Focus />
     </div>
   );
 };
