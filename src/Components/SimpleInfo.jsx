@@ -11,6 +11,7 @@ import "keen-slider/keen-slider.min.css";
 import "../Styles/SimpleInfo.css";
 import { styled, alpha } from "@mui/material/styles";
 import { InputBase } from "@mui/material";
+import { Zoom } from "react-reveal";
 
 const SimpleInfo = () => {
   const Search = styled("div")(({ theme }) => ({
@@ -134,11 +135,13 @@ const SimpleInfo = () => {
         <div ref={sliderRef} className="keen-slider">
           {data.map((d) => (
             <div className="keen-slider__slide p-7 flex items-center w-full">
-              <h3 className="text-4xl text-[#D0011C] mx-4">{d.icon}</h3>
-              <div>
-                <h4 className="font-bold">{d.title}</h4>
-                <h4 className="text-[#878787]">{d.des}</h4>
-              </div>
+              <Zoom>
+                <h3 className="text-4xl text-[#D0011C] mx-4">{d.icon}</h3>
+                <div>
+                  <h4 className="font-bold">{d.title}</h4>
+                  <h4 className="text-[#878787]">{d.des}</h4>
+                </div>
+              </Zoom>
             </div>
           ))}
         </div>

@@ -4,13 +4,16 @@ import Home from "./Pages/Home";
 import Footer from "./Shared/Footer";
 import ScrollToTop from "react-scroll-to-top";
 import { MdOutlineKeyboardDoubleArrowUp } from "react-icons/md";
+import { Fade } from "react-reveal";
 
 function App() {
   return (
     <div className="App">
       <DrawerAppBar />
       <Home />
-      <Footer />
+      <Fade up>
+        <Footer />
+      </Fade>
       <ScrollToTop
         color="#02411C"
         style={{

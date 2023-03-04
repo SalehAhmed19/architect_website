@@ -7,6 +7,7 @@ import icon2 from "../Assets/icon2.png";
 import icon3 from "../Assets/icon3.png";
 import icon4 from "../Assets/icon4.png";
 import InnovationCard from "./InnovationCard";
+import { Fade, Zoom } from "react-reveal";
 
 const Innovation = () => {
   const data = [
@@ -41,10 +42,12 @@ const Innovation = () => {
   });
   return (
     <div className="bg-[#F7F7F7] p-24">
-      <h2 className="text-center font-bold text-4xl">
-        Delivering Innovation{" "}
-        <span className="text-[#D0041D]">Sustainability.</span>
-      </h2>
+      <Fade down>
+        <h2 className="text-center font-bold text-4xl">
+          Delivering Innovation{" "}
+          <span className="text-[#D0041D]">Sustainability.</span>
+        </h2>
+      </Fade>
       <div className="my-10 lg:mx-10">
         <div className="navigation-wrapper">
           <div ref={sliderRef} className="keen-slider">
@@ -53,7 +56,9 @@ const Innovation = () => {
                 key={d._id}
                 className="keen-slider__slide bg-[#fff] relative hover-effect"
               >
-                <InnovationCard d={d} />
+                <Zoom>
+                  <InnovationCard d={d} />
+                </Zoom>
                 <div className="h-[5px] w-full hover-active absolute bottom-0"></div>
               </div>
             ))}
@@ -81,12 +86,14 @@ const Innovation = () => {
           )}
         </div>
       </div>
-      <p className="text-center lg:mx-64 text-[#878787]">
-        Our industry professionals are able to deliver better ideas and
-        solutions embedded with a deep understanding of each client’ business
-        and industry. The industry focus of our experts allows us to offer
-        comprehensive solutions
-      </p>
+      <Fade up>
+        <p className="text-center lg:mx-64 text-[#878787]">
+          Our industry professionals are able to deliver better ideas and
+          solutions embedded with a deep understanding of each client’ business
+          and industry. The industry focus of our experts allows us to offer
+          comprehensive solutions
+        </p>
+      </Fade>
     </div>
   );
 };

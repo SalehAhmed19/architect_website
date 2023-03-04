@@ -8,6 +8,7 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import "../Styles/Testimonials.css";
 import TestimonialCard from "./TestimonialCard";
+import { Fade, Zoom } from "react-reveal";
 
 const Testimonials = () => {
   const data = [
@@ -70,17 +71,23 @@ const Testimonials = () => {
   });
   return (
     <div className="bg-[#F7F7F7] p-20 py-24" id="testimonials">
-      <h1 className="text-4xl font-bold flex items-center my-10">
-        <TbMessages className="mr-3 text-[#C9C9C9] text-5xl" />
-        Happy Customers Said
-      </h1>
-      <hr />
+      <Fade left>
+        <h1 className="text-4xl font-bold flex items-center my-10">
+          <TbMessages className="mr-3 text-[#C9C9C9] text-5xl" />
+          Happy Customers Said
+        </h1>
+      </Fade>
+      <Fade down>
+        <hr />
+      </Fade>
       <div className="mt-14 mb-5">
         <div className="navigation-wrapper">
           <div ref={sliderRef} className="keen-slider">
             {data.map((d) => (
               <div key={d._id} className="keen-slider__slide">
-                <TestimonialCard d={d} />
+                <Zoom>
+                  <TestimonialCard d={d} />
+                </Zoom>
               </div>
             ))}
           </div>

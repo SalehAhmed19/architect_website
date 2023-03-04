@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import "../Styles/Brands.css";
+import { Zoom } from "react-reveal";
 
 const Brands = () => {
   const data = [
@@ -114,7 +115,9 @@ const Brands = () => {
       <div ref={sliderRef} className="keen-slider">
         {data.map((d) => (
           <div className="keen-slider__slide flex justify-center items-center">
-            <img src={d.img} alt="" />
+            <Zoom>
+              <img src={d.img} alt="" />
+            </Zoom>
           </div>
         ))}
       </div>

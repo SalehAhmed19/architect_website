@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade, Zoom } from "react-reveal";
 import img1 from "../Assets/card-img3.jpeg";
 import img2 from "../Assets/card-img4.jpeg";
 import img3 from "../Assets/card-img5.jpeg";
@@ -52,25 +53,33 @@ const BusinessInnovation = () => {
     },
   ];
   return (
-    <div className="py-20" id="innovations">
-      <h2 className="text-4xl font-bold text-center">
-        360° Business <span className="text-[#D0011C]">Innovation.</span>
-      </h2>
-      <p className="text-[#878787] lg:mx-40 mx-5 text-center my-5 text-xl">
-        It is imperative that everyone follows the policies and guidelines to
-        ensure their own <br /> safety and the safety of others around them.
-      </p>
+    <div className="py-20 my-14" id="innovations">
+      <Fade down>
+        <h2 className="text-4xl font-bold text-center">
+          360° Business <span className="text-[#D0011C]">Innovation.</span>
+        </h2>
+      </Fade>
+      <Fade left>
+        <p className="text-[#878787] lg:mx-40 mx-5 text-center my-5 text-xl">
+          It is imperative that everyone follows the policies and guidelines to
+          ensure their own <br /> safety and the safety of others around them.
+        </p>
+      </Fade>
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:ml-20 mx-5">
           {data.map((d) => (
             <div className="py-10">
-              <BusinessInnovationCard key={d._id} d={d} />
+              <Zoom>
+                <BusinessInnovationCard key={d._id} d={d} />
+              </Zoom>
             </div>
           ))}
         </div>
         <div>
           {data2.map((d2) => (
-            <BICard key={d2._id} d2={d2} />
+            <Fade right>
+              <BICard key={d2._id} d2={d2} />
+            </Fade>
           ))}
         </div>
       </div>
